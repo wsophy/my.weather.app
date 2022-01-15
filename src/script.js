@@ -87,3 +87,20 @@ function showWeather(response){
 
 let currentButton = document.querySelector ("#currentLocation");
 currentButton.addEventListener("click", showPosition);
+
+function changeToCelsius(event) {
+    event.preventDefault();
+    document.querySelector("#degree").innerHTML = 16;
+    console.log(changeToCelsius);
+  }
+  
+  function changeToFahrenheit(event) {
+    event.preventDefault();
+    document.querySelector("#degree").innerHTML = 66;
+  }
+  let tempC = document.querySelector(".celsius");
+  tempC.addEventListener("click", changeToCelsius);
+  
+  let tempF = document.querySelector(".fahrenheit");
+  tempF.addEventListener("click", changeToFahrenheit);
+  console.log(changeToFahrenheit);
